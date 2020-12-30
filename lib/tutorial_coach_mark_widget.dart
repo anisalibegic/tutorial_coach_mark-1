@@ -142,14 +142,14 @@ class TutorialCoachMarkWidgetState extends State<TutorialCoachMarkWidget> {
           {
             weight = positioned.dx - haloWidth;
             left = 0;
-            top = positioned.dy - target.size.height / 2 - haloHeight;
+            top = 0;
             bottom = null;
           }
           break;
         case AlignContent.right:
           {
             left = positioned.dx + haloWidth;
-            top = positioned.dy - target.size.height / 2 - haloHeight;
+            top = 0;
             bottom = null;
             weight = MediaQuery.of(context).size.width - left;
           }
